@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>面向对象实验2代码汇总</title>
+    <style>
+        .task { margin: 20px 0; padding: 10px; border: 1px solid #ccc; }
+        pre { background: #f5f5f5; padding: 10px; overflow-x: auto; }
+    </style>
+</head>
+<body>
+    <h1>面向对象实验2代码汇总</h1>
+
+    <!-- 任务1代码 -->
+    <div class="task">
+        <h2>任务1</h2>
+        <pre id="task1-code"></pre>
+    </div>
+
+    <!-- 任务2代码 -->
+    <div class="task">
+        <h2>任务2</h2>
+        <pre id="task2-code"></pre>
+    </div>
+
+    <!-- 任务3代码 -->
+    <div class="task">
+        <h2>任务3</h2>
+        <pre id="task3-code"></pre>
+    </div>
+
+    <!-- 任务4代码 -->
+    <div class="task">
+        <h2>任务4</h2>
+        <pre id="task4-code"></pre>
+    </div>
+
+    <script>
+        // 加载任务1的代码文件（需替换为实际文件路径）
+        fetch('任务1.C++')
+            .then(response => response.text())
+            .then(code => document.getElementById('task1-code').textContent = code);
+
+        // 加载任务2的代码文件
+        fetch('任务2.C++')
+            .then(response => response.text())
+            .then(code => document.getElementById('task2-code').textContent = code);
+
+        // 加载任务3的代码文件
+        fetch('任务3.C++')
+            .then(response => response.text())
+            .then(code => document.getElementById('task3-code').textContent = code);
+
+        // 加载任务4的代码文件
+        fetch('任务4.C++')
+            .then(response => response.text())
+            .then(code => document.getElementById('task4-code').textContent = code);
+    </script>
+</body>
+</html>
